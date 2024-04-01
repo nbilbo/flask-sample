@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "tocadobilbo"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flask = "^3.0.2"
+flask-sqlalchemy = "^3.1.1"
+dynaconf = "^3.2.5"
+flask-migrate = "^4.0.7"
+flask-admin = "^1.6.1"
+wtforms-sqlalchemy = "^0.4.1"
+flask-pagedown = "^0.4.0"
+markdown = "^3.6"
+bleach = "^6.1.0"
+cloudinary = "^1.39.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

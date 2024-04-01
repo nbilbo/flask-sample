@@ -1,0 +1,13 @@
+* {
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+img {
+  display: block;
+  width: 300px;
+  height: 300px;
+}

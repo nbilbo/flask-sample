@@ -1,0 +1,13 @@
+default:
+  EXTENSIONS:
+    - 'tocadobilbo.blueprints.blog:init_app'
+    - 'tocadobilbo.extensions.database:init_app'
+    - 'tocadobilbo.extensions.migrations:init_app'
+    - 'tocadobilbo.extensions.admin:init_app'
+    - 'tocadobilbo.extensions.pagedown:init_app'
+
+  SECRET_KEY: 'super-secret-key'
+  
+  SQLALCHEMY_DATABASE_URI: 'sqlite:///database.db'
+
+  FLASK_ADMIN_SWATCH: 'darkly'

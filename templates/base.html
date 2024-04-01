@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" value="width: device-width, inital-scale=1.0">
+    <title>{% block title %}tocadobilbo{% endblock title %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+  </head>
+
+  <body>
+    <!-- nav -->
+    <nav>
+      <div>
+        <ul>
+          <li>
+            <a href="{{ url_for('blog.home') }}">home</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for('blog.posts') }}">posts</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for('blog.albums') }}">albums</a>
+          </li>
+
+          <li>
+            <a href="{{ url_for('blog.about') }}">about</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <main>
+      <div>
+        {% block content %}
+        {% endblock content %}
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+  {% if post.thumbnail %}
+    <img src="{{ post.thumbnail.secure_url }}" />
+  {% endif %}
+  {{ post.body_html | safe }}
+</div>
+{% endblock content %}
